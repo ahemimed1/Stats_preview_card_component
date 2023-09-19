@@ -1,0 +1,141 @@
+/*
+BU AHMED HEMIMED
+IG/ ahemimed1;
+*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #04050b;
+    font-family: system-ui, sans-serif;
+}
+
+.container {
+    border-radius: 20px;
+    margin-top: 50px;
+    display: flex;
+    width: 70%;
+    gap: 20px;
+    background: #1c1938;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.container>div {
+    width: 50%;
+    color: white;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+
+}
+
+.text .head {
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+.text .head>span {
+    color: #a95ad8;
+}
+
+.text>p {
+    color: #9e9e9e;
+    font-size: 14px;
+    width: 90%;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.text div.stat {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text div.stat div {
+    text-transform: capitalize;
+    color: #9e9e9e;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.text div.stat div span {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.image {
+    border-radius: 0 20px 20px 0;
+    background-size: 100% 100%;
+    background-image: linear-gradient(to right, #56157ca9, #56157ca9), url(images/image-header-desktop.jpg);
+    -webkit-border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 20px 20px 0;
+    -ms-border-radius: 0 20px 20px 0;
+    -o-border-radius: 0 20px 20px 0;
+}
+
+@media (max-width:999px) {
+    body {
+        height: 1200px;
+    }
+
+    .container {
+        min-width: 270px;
+        width: 400px;
+        flex-direction: column-reverse;
+    }
+
+    .container>div {
+        width: 100%;
+        align-items: center;
+    }
+
+    .text {
+        padding: 50px 30px;
+    }
+
+    .image {
+        border-radius: 20px 20px 0 0;
+        height: 300px;
+        background-size: 100% 100%;
+        background-image: linear-gradient(to right, #56157ca9, #56157ca9), url(images/image-header-mobile.jpg);
+        -webkit-border-radius: 20px 20px 0 0;
+        -moz-border-radius: 20px 20px 0 0;
+        -ms-border-radius: 20px 20px 0 0;
+        -o-border-radius: 20px 20px 0 0;
+    }
+
+    .text div.stat {
+        gap: 50px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:470px) {
+    .container {
+        min-width: 300px;
+        width: 90%;
+        flex-direction: column-reverse;
+    }
+}
